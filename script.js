@@ -17,6 +17,13 @@ $(document).ready(function () {
                 );
         
             });
+  $('#scrollsnap-container').hide();
+  $(window).scroll(function () {
+    $('#scrollsnap-container').show(1 - $('#scrollsnap-container').scrollTop() / 250);
+    
+  });
+  
+
 
 });
 
