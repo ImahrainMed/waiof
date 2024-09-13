@@ -1,6 +1,9 @@
-.primary_bg-color{
-    background-color: #74c4ff !important;
-    color: black;
+.nav-link{
+  color: white !important;
+}
+
+.nav-link-dark{
+  color: black !important;
 }
 
 .light_bg-color{
@@ -8,6 +11,23 @@
 }
 .milk_bg{
   background-color: #FFFFFF;
+}
+.milk_bg_lux{
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.dropdown-menu{
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-color: #FFFFFF !important;
+
+}
+.dropdown-menu .dropdown-item{
+  color: #FFFFFF !important;
+}
+
+.dropdown-item:hover{
+  background-color: #74c4ff !important;
+  color: #FFFFFF !important;
 }
 .grey_bg-color{
     background-color: #F0F0F0 !important;
@@ -37,17 +57,21 @@ header {
     z-index: 1030;
     width: 100%;
     top: 0px;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    
+    /* box-shadow: 0px -3px 14px gray; */
   }
 
 header .navbar {
       /* height: 180px !important; */
+      color: white !important;
   }
   
 .header_head {
       /* display: flow-root; */
       /* flex-basis: auto; */
       width: 100%;
+      color: white !important;
   }
   
 .festival_infos {
@@ -72,7 +96,7 @@ header .navbar {
 
 /* content */
 .content_top{
-    margin-top: 164px;
+    /* margin-top: 164px; */
 }
 
 .content_top .col-md-12 {
@@ -141,6 +165,21 @@ header .navbar {
 .btn-override-2:hover{
 background-color: rgb(3, 20, 34) !important;
 border-color: rgb(3, 20, 34) !important;
+}
+
+.btn-override-3{
+  background-color: #ffffff00 !important;
+  border: 3px solid white !important;
+  color: #FFFFFF !important;
+  border-radius: 35px !important;
+  font-size: large;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-override-3:hover{
+background-color: white !important;
+color: #000 !important;
 }
 
 .figures_title{
@@ -220,6 +259,12 @@ border-color: rgb(3, 20, 34) !important;
 .speakers-image{
   border: 1px solid #74c4ff;
   border-radius: 15px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.speakers-image:hover{
+  transform: scale(1.1);
 }
 .speaker-4_row{
   border: 1px solid white;
@@ -233,6 +278,8 @@ border-color: rgb(3, 20, 34) !important;
   background-position-y: -687px;
   padding: 100px 15% 100px 15%;
 }
+
+
 
 /* end of content */
 
