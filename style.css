@@ -1,6 +1,6 @@
 .primary_bg-color{
-    background-color: #6E2CF2 !important;
-    color: white;
+    background-color: #74c4ff !important;
+    color: black;
 }
 
 .light_bg-color{
@@ -20,7 +20,7 @@
 }
 
 .text-violet{
-    color: #6E2CF2 !important;
+    color: #74c4ff !important;
 }
 
 .font-bolder_i{
@@ -37,31 +37,32 @@ header {
     z-index: 1030;
     width: 100%;
     top: 0px;
+    background-color: #FFFFFF;
   }
 
 header .navbar {
-      height: 180px !important;
+      /* height: 180px !important; */
   }
   
 .header_head {
-      display: flow-root;
-      flex-basis: auto;
+      /* display: flow-root; */
+      /* flex-basis: auto; */
       width: 100%;
   }
   
 .festival_infos {
-      border-left: 1px solid lightgray;
-      padding-left: 5%;
+      /* border-left: 1px solid lightgray; */
+      /* padding-left: 5%; */
       padding-top: 50px;
       width: 100%;
 
   }
 
-.header_btn{
+/* .header_btn{
     position: absolute;
-    right: 0px;
+    right: 25px;
     top: 65px;
-}
+} */
 
 .btn-parallax{
   padding: 17px 30px 17px 30px !important;
@@ -71,7 +72,7 @@ header .navbar {
 
 /* content */
 .content_top{
-    margin-top: 185px;
+    margin-top: 164px;
 }
 
 .content_top .col-md-12 {
@@ -113,17 +114,33 @@ header .navbar {
   }
 
 .btn-override{
-    background-color: #6E2CF2 !important;
-    border-color: #6E2CF2 !important;
-    border-radius: 0px !important;
+    background-color: #74c4ff !important;
+    border-color: #74c4ff !important;
+    color: #000 !important;
+    border-radius: 35px !important;
     font-size: large;
     font-weight: 700;
     text-transform: uppercase;
   }
 
 .btn-override:hover{
-  background-color: rgb(139, 63, 255)  !important;
-  border-color: rgba(139, 63, 255, 0.9) !important;
+  background-color: rgb(91, 170, 226) !important;
+  border-color: rgb(91, 170, 226)  !important;
+}
+
+.btn-override-2{
+  background-color: #011e36 !important;
+  border-color: #011e36 !important;
+  color: #FFFFFF !important;
+  border-radius: 35px !important;
+  font-size: large;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-override-2:hover{
+background-color: rgb(3, 20, 34) !important;
+border-color: rgb(3, 20, 34) !important;
 }
 
 .figures_title{
@@ -154,27 +171,69 @@ header .navbar {
   }
 
 .speakers_section{
-  background: rgb(34,110,195);
-  background: linear-gradient(147deg, rgba(34,110,195,1) 0%, rgba(34,193,195,1) 100%); 
+  background: rgb(91, 170, 226);
+  background: linear-gradient(147deg, rgb(91, 170, 226) 0%, rgb(91, 170, 226) 100%); 
 }
 
+.speaker-text{
+  border: 1px solid #f8f8f8;
+  box-shadow: 13px -3px 21px 2px lightgray;
+  border-bottom-right-radius: 15px;
+  padding: 40px;
+  border-top-right-radius: 15px;
+  margin-top: 10%;
+}
+.speaker-image{
+  border: 1px solid white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: 0px;
+}
+
+.speaker-text-reversed{
+  border: 1px solid #f8f8f8;
+  box-shadow: -3px -3px 21px 2px lightgray;
+  border-bottom-left-radius: 15px;
+  padding: 40px;
+  border-top-left-radius: 15px;
+  margin-top: 10%;
+}
+.speaker-image-reversed{
+  border: 1px solid white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: 0px;
+}
 .speakers_section h6{
   font-weight: bolder;
   font-size: 20px;
 }
 
+.speakers-text{
+  background-color: #f2f2f2;
+  color: black;
+  border-radius: 15px;
+  margin-top: -27px;
+  z-index: 1;
+  position: relative;
+}
+.speakers-image{
+  border: 1px solid #74c4ff;
+  border-radius: 15px;
+}
 .speaker-4_row{
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 30px;
   margin: 30px;
 }
 
 .solution-section{
-  background: url('media/bg-1.jpg');
+  background-color:#74c4ff;
   background-position-y: -687px;
   padding: 100px 15% 100px 15%;
 }
+
 /* end of content */
 
 /* footer */
@@ -193,12 +252,16 @@ header .navbar {
 #scrollsnap-container{
   z-index: 1030;
   position: fixed;
-  background-color: gray;
+  background-color: #011e36;
   bottom: 60px;
   right: 30px;
   padding: 20px 25px 20px 25px;
   border-radius: 35px;
   cursor: pointer;
+}
+
+#scrollsnap-container:hover{
+  background-color: rgb(3, 20, 34);
 }
 
 a #scrollsnap-container{
