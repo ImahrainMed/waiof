@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --primary-color: #137dc7; /* Define the primary color */
+}
+body {
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border: red 1px solid;
+} */
+/* media queries */
+@media screen and (max-width: 991px) {
+    .festival_infos{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mobile_nav{
+        display: none;
+    }
+}
+/* end of media queries */
+/* header Style */
+.nav-link{
+    color: white !important;
+  }
+  
+  .nav-link-dark{
+    color: black !important;
+  }
+
+  .i_black{
+    color: black !important;
+  }
+  
+
+header {
+    position: fixed;
+    z-index: 1030;
+    width: 100%;
+    top: 0px;
+  }
+
+header .navbar {
+    color: white !important;
+  }
+  
+.header_head {
+      display: flow-root;
+      flex-basis: auto;
+      width: 100%;
+      color: white !important;
+  }
+  
+.festival_infos {
+      /* border-left: 1px solid lightgray; */
+      padding-left: 5%;
+      padding-top: 50px;
+      width: 100%;
+
+  }
+
+.header_btn{
+    position: absolute;
+    right: 0px;
+    top: 65px;
+}
+
+.milk_bg_lux{
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+  
+
+  .btn-override{
+    background-color: #137dc7 !important;
+    border-color: #137dc7 !important;
+    border-radius: 0px !important;
+    font-size: large;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .btn-override:hover{
+    background-color: rgb(31, 105, 158) !important;
+    border-color: rgb(69, 148, 204)  !important;
+  }
+/* End Of header Style */
+
+/* footer */
+.footer-wallpaper{
+    background: url('../assets/footer-wallpaper.jpg');
+    background-position-y: -345px;
+  }
+  
+
+  /* end of footer */
+.logo-and-info {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+
+    height: 50px;
+    margin-right: 20px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.event-info span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.event-info span img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 9px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.img-background {
+    background-image: url("../assets/bckgrd-1.png");
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Makes sure video doesn’t interfere with user interactions */
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 10;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero-content .learn-more-btn {
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Statistics Section */
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.stat {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.stat span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+  /* New Section */
+.ai-world-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #f1f2f6;
+}
+
+.dark{
+    background-image: url("../assets/arriere.jpg");;
+    padding: 50px;
+    color: #f1f2f6;
+}
+
+.ai-world-section .left-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ai-world-section .right-content {
+    max-width: 500px;
+}
+
+.ai-world-section .right-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.ai-world-section .left-content {
+    max-width: 500px;
+}
+
+.right-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color); /* Purple color for the title */
+    margin-bottom: 20px;
+}
+
+
+.left-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color); /* Purple color for the title */
+    margin-bottom: 20px;
+}
+
+.right-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+
+.left-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.dark .left-content p {
+    font-size: 1rem;
+    color:#f1f2f6;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.right-content .cta-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color); /* Button color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .ai-world-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ai-world-section .left-image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-content {
+        max-width: 100%;
+    }
+}
+.intervenants-section {
+    
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #adb0bb;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;  
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 12%; /* Adjust for desired column width */
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
